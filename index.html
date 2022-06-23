@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ANIMACION DE ALGORITMOS DE BUSQUEDA DE CADENA</title>
+  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+    
+  <!--     <img src="img/logo-horizontal.jpg">
+ <img src="img/sistemas.png"> -->
+
+  <!-- <img src="img/logo-horizontal.jpg"> 
+ <img src="img/logo_ufps.png"   width="400" height="341">
+ <img src="img/sistemas.png "width="80"height="80">-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+</head>
+<body class="bg-gray-100 py-10" id="body">
+  <div id="header">   
+    <img src="img/logo_ufps.png" class="logo">
+    <img src="img/sistemas.png" class="logo">
+  </div>
+  <div class="container mx-auto bg-white shadow-md p-12" id="containermax">
+    <div class="mb-12">
+      <div class="">
+        <h1 class="text-2xl text-center mb-10">Algoritmos de búsquedas de cadenas</h1>
+        <div class="flex items-center justify-between">
+          <label class="w-1/6" for="inputGroupSelect01">Metodo de busqueda</label>
+          <select class="border border-2 border-gray-300 p-2 w-5/6" id="Select1">
+            <option value="0" selected>Seleccionar metodo</option>
+            <option value="1">Fuerza Bruta</option>
+            <option value="2">KMP</option>
+            <option value="3">BoyerMoore</option>
+            <option value="4">BoyerMooreHorspool</option>
+            <option value="5">RabinKarp</option>
+          </select>
+        </div>
+        <div class="flex items-center justify-between my-4">
+          <label class="w-1/6" for="Input1">Cadena</label>
+          <input class="border border-2 border-gray-300 p-2 w-5/6" id="Input1"
+            placeholder="Ingrese la Cadena solo Letras">
+        </div>
+        <div class="flex items-center justify-between my-4">
+          <label class="w-1/6" for="Input2">Patron</label>
+          <div class="w-5/6 flex items-center">
+            <input class="border border-2 border-gray-300 p-2 w-5/6" id="Input2"
+              placeholder="Ingrese el Patron solo letras">
+            <button id="search" type="submit" class="w-1/6 bg-blue-500 h-11 text-white">Buscar Patron</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="border-color: #0056b2;" />
+    <div class="flex items-center my-12">
+      <div class="w-3/6 mr-3" id="maxAlgorithm">
+        <label class="" for="inputGroupSelect01">Animacion del Algoritmo</label>
+
+        <!-- ALGORITMO DINAMICO  -->
+        <div class="mt-4 flex flex-col" id="wrapper">
+          <div id="baseStr"></div>
+          <div id="targetStr"></div>
+        </div>
+      </div>
+      <div class="w-3/6 mr-3" id="info">
+        <label for="">INFORMACION<br></label>
+        <span id="infotext"></span>
+      </div>
+    </div>
+    <button class="w-1/6 bg-blue-500 h-11 text-white" type="submit" id="button">Ver documento</button>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <!-- TITULO DEL MODAL -->
+        <h2>Calculo del T(n)</h2>
+      </div>
+      <div class="modal-body">
+        <!-- CUERPO DEL MODAL -->
+        <span id="algoritmoActual">ELEGIR METODO: </span>
+      <!--  <img src="img/fb.png" >-->
+        <a id="enlaceAlgoritmo" class="text-dark" href="#" target="_blank" style="color:blue"> COSTO ALGORITMICO </a>
+      </div>
+    </div>
+  </div>
+  <script src="js/text.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+<footer class="bg-light text-center text-lg-start" id="">
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    © 2022 Copyright:
+    <a target="_blank" href="https://ww2.ufps.edu.co/">Yeison Osorio Estudiante de Ingenieria de Sistemas Universidad
+      Francisco de Paula Santander</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+</html>
